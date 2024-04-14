@@ -1,0 +1,48 @@
+.esports-img {
+  height: 100vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.button-class {
+  margin: 0.5rem auto;
+  text-align: center; 
+  animation-name: float ;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+}
+
+.second-row {
+  margin: 1rem auto;
+  padding: 1rem;
+  animation-name: float ;
+  animation-duration: 1.7s;
+  animation-iteration-count: 1;
+}
+
+.carousel-item img {
+  height: auto;
+  max-height: 500px; 
+  animation-name: float ;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+}
+
+@keyframes float {
+
+
+
+  from{
+    transform: scale(3);
+  }to{
+    transform: scale(1);
+  }
+    
+
+  
+}
+

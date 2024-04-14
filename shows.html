@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shows</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./css/shows.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="shortcut icon" href="./image/logo.gif" type="image/x-icon">
+    <script>
+function toggleLight() {
+  var body = document.getElementById("body");
+  var currentClass = body.className;
+  body.className = currentClass == "dark-mode" ? "light-mode" : "light-mode";
+}
+
+function toggleDark() {
+  var body = document.getElementById("body");
+  var currentClass = body.className;
+  body.className = currentClass == "light-mode" ? "dark-mode" : "dark-mode";
+}
+
+$(".btn-group > .btn1").click(function(){
+  $(".btn-group > .btn1").removeClass("active");
+  $(this).addClass("active");
+});
+    </script>
+  </head>
+    <body id="body" class="dark-mode">
+      <header>
+        <nav class="top-nav">
+          <div class="logo-div">
+            <img class="logo-img" src="./image/logo.gif" alt="logo" />
+          </div>
+  
+          <div class="div-btn">
+            
+              <a href="./index.html"><button class="btn-top" type="button">Home
+              </button></a>
+            
+              <a href="./community.html"><button class="btn-top" type="button">Community
+              
+              </button></a>
+            
+  
+           
+              <a href="./collection.html"> <button class="btn-top" type="button">shop</button></a>
+           
+            
+              <a href="./esports.html"><button class="btn-top" type="button">Esports</button></a>
+           
+           
+              <a href="./gameinfo.html"> <button class="btn-top" type="button">Games</button></a>
+          
+            
+              <a href="./Login.html"><button class="btn-top" type="button">Login</button></a>
+          
+            
+          </div>
+         
+            <div class="btn-group btn-group-toggle mb-3">
+              <button id="light" type="button" class="btn btn1 pr-4 pl-4 border-0" onclick="toggleLight()">Light</button>
+              <button id="dark" type="button" class="active btn1 btn pr-4 pl-4 border-0" onclick="toggleDark()">Dark</button>   
+            </div>
+        
+        </nav>
+      </header>
+    <div class="container-fluid container-shows">
+      <iframe
+      width="100%"
+      height="600"
+    
+        src="https://www.youtube.com/embed/Xe6zxY4A4UU?si=Tr_AhFvP0sXkWMK8"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <div class="">
+        <nav class="navibar">
+            <ul>
+              <li>
+                <a type="button" data-toggle="collapse" data-target="#collapseExampleVideo" aria-expanded="false" aria-controls="collapseExample">Trailers</a>
+              </li>
+              <li>
+                <a type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Images</a>
+              </li>
+             
+              </li>
+              
+              
+            </ul>
+            <div class="collapse" id="collapseExample">
+              <div class="card card-body">
+               
+                  <div class="slider">
+                    <section>
+                      <img src="./image/ascent1.jpg" class="card-img-top" alt="...">
+                    </section>
+                    <section>
+                      <img src="./image/ascent2.jpg" class="card-img-top" alt="...">
+                    </section>
+                    <section>
+                      <img src="./image/ascent3.jpg" class="card-img-top" alt="...">
+                    </section>
+                  </div>
+                  
+                 
+              
+                
+              </div>
+            </div>
+
+            <!-- videos -->
+            <div class="collapse" id="collapseExampleVideo">
+              <div class="card card-body">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                  
+
+                  <div class="col">
+          
+                    <div class="container-fluid">
+                      <iframe
+                      width="280"
+                      height="200"
+                    
+                        src="https://www.youtube.com/embed/Xe6zxY4A4UU?si=Tr_AhFvP0sXkWMK8"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+
+                  </div>
+                  <div class="col">
+                    <div class="container-fluid">
+                      <iframe
+                      width="280"
+                      height="200"
+                    
+                        src="https://www.youtube.com/embed/MWs3wzB-Mp4?si=bleaTwkmGk_JxtBI"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <div class="container-fluid">
+                      <iframe
+                      width="280"
+                      height="200"
+                    
+                        src="https://www.youtube.com/embed/Xe6zxY4A4UU?si=Tr_AhFvP0sXkWMK8"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+                  </div>
+                 
+                </div>
+                
+              </div>
+            </div>
+          </nav>
+    </div>
+  
+    
+   <footer>
+    <div class="social-media">
+      <div class="inside">
+        <p>follow us on</p>
+      </div>
+      <div class="media">
+        <a href="">
+          <i class="fa fa-facebook"></i>
+        </a>
+        <a href="">
+          <i class="fa fa-instagram"></i>
+        </a>
+        <a href="">
+          <i class="fa fa-twitter"></i>
+        </a>
+        <a href="">
+          <i class="fa fa-youtube"></i>
+        </a>
+      </div>
+    </div>
+    <div class="right-footer-section">
+      <img src="./image/logo.gif" alt="spartak" />
+    </div>
+    <div class="middle-footer-section">
+      <ul>
+        <li><a href="#privacy"> privacy policy </a></li>
+        <li><a href="#privacy">Terms and condition </a></li>
+        <li><a href="#contact">Contact US </a></li>
+      </ul>
+      <br />
+      <br />
+      <span class="copyright">© cyberpunk 2024 All right reserved</span>
+    </div>
+    <div class="left-footer-section">
+      <img
+        class="age-restriction"
+        src="./image/age-restriction.png"
+        alt="age-restriction image" />
+    </div>
+  </footer>
+  
+    
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  </body>
+  
+    
+</html>

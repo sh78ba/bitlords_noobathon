@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Info</title>
+   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./css/gameinfo.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="shortcut icon" href="./image/logo.gif" type="image/x-icon">
+    
+    <script>
+      function toggleLight() {
+        var body = document.getElementById("body");
+        var currentClass = body.className;
+        body.className = currentClass == "dark-mode" ? "light-mode" : "light-mode";
+      }
+      
+      function toggleDark() {
+        var body = document.getElementById("body");
+        var currentClass = body.className;
+        body.className = currentClass == "light-mode" ? "dark-mode" : "dark-mode";
+      }
+      
+      $(".btn-group > .btn1").click(function(){
+        $(".btn-group > .btn1").removeClass("active");
+        $(this).addClass("active");
+      });
+          </script>
+
+
+</head>
+
+<body id="body" class="dark-mode">
+  <header>
+    <nav class="top-nav">
+      <div class="logo-div">
+        <img class="logo-img" src="./image/logo.gif" alt="logo" />
+      </div>
+
+      <div class="div-btn">
+        
+          <a href="./index.html"><button class="btn-top" type="button">Home
+          </button></a>
+        
+          <a href="./community.html"><button class="btn-top" type="button">Community
+          
+          </button></a>
+        
+
+       
+          <a href="./collection.html"> <button class="btn-top" type="button">shop</button></a>
+       
+        
+          <a href="./esports.html"><button class="btn-top" type="button">Esports</button></a>
+       
+       
+          <a href="./gameinfo.html"> <button class="btn-top" type="button">Games</button></a>
+      
+        
+          <a href="./Login.html"><button class="btn-top" type="button">Login</button></a>
+      
+        
+      </div>
+     
+        <div class="btn-group btn-group-toggle mb-3">
+          <button id="light" type="button" class="btn btn1 pr-4 pl-4 border-0" onclick="toggleLight()">Light</button>
+          <button id="dark" type="button" class="active btn1 btn pr-4 pl-4 border-0" onclick="toggleDark()">Dark</button>   
+        </div>
+    
+    </nav>
+  </header>
+  </div>
+    <div>
+    <h1 class="display-4 text-center heading1">Game Information</h1>
+
+    
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active ">
+            <img src="./image/the-ascent.avif" class="img-fluid w-100 " alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>The Ascent</h5>
+                <p>The action-shooter RPG The Ascent is a brilliant and lively cyberpunk game that challenges players to survive in a metropolis run by the infamous Ascent Group. </p>
+                <button type="button" class="btn btn-light" id="myButton" onclick="window.location='./shows.html'" value >Shows</button>
+              </div>
+        
+            
+          </div>
+          <div class="carousel-item">
+            <img src="./image/ruiner-cropped.avif" class="img-fluid w-100 " alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Ruinner</h5>
+                <p>SDeveloped by Reikon Games, Ruiner is an intense top-down shooting game set in a harsh cyberpunk environment. Controlling a silent, masked protagonist armed to the teeth with high-tech weapons, players set out on a journey for retribution against the corrupt government that rules Rengkok. </p>
+                <button type="button" class="btn btn-light">Shows</button>
+              </div>
+        
+          </div>
+          <div class="carousel-item">
+            <img src="./image/system-shock-minipistol.avif" class="img-fluid w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>System Shock </h5>
+                <p>The System Shock remake emulated the first game to a T, which works both for and against this game. Purists and fans of the original System Shock will love just how much of the experience is preserved in a remake that looks and feels amazing to play. </p>
+                <button type="button" class="btn btn-light">Shows</button>
+              </div>
+        
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Game Information
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>The Ascent is a unique top-down shooter game from Neon Giant, packed with cyberpunk-themed action that can be experienced alone or in a co-op game mode with friends. In a futuristic world where corporations own everything, the player must fight through the sudden fall of Ascent Group to find their freedom.</strong> 
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Story
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                The Ascent is presented from an isometric view overlooking the character(s). It is a twin-stick shooter. It includes the ability to aim both high and low on enemy targets, allowing the player to differentiate between shooting enemies closer or further away. This mechanic is key to the game's cover system, allowing the player to aim at enemies over the top of the props in the environment. The player can fully customize their character's appearance, and can augment their character with cyberware upgrades to get new skills and abilities. Players have an upgradeable cyberdeck device, which they can use to gain access or "hack" into previously locked areas and loot certain chests.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Characters
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p><strong>The Indent</strong> The main character: an indent working out of Cluster 13, under Stackmaster Poone. Bristling with ambition and with a taste for mindless violence.</p>
+              <p><strong>Your IMP</strong> An AI installed in the player character's head, which is near-universal in the setting.</p>
+              <p><strong>Stackmaster Poone</strong>The supervisor of cluster 13. A notoriously cheap man with a crude disposition who behaves more like a local crime lord than the local supervisor for the megacorporation.</p>
+              <p><strong>nogHead</strong> A hacker operating out of the abandoned Black Lake district near Cluster 13, nogHead is first encountered when working for Poone but continues to play an important role in the plot from there.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  News
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p><strong>March 29th / Patch #1 deployed for PlayStation</strong>
+                    <p>Fixed an issue on PlayStation Pro where the resolution was incorrectly set, now corrected to 1440p.</p>  
+                    <p>Fixed an issue where purchased items from the various Vendors would not show for Client Players. </p>
+                
+
+                   
+              </div>
+            </div>
+          </div>
+      </div>
+
+    </div>
+    <footer>
+      <div class="social-media">
+        <div class="inside">
+          <p>follow us on</p>
+        </div>
+        <div class="media">
+          <a href="">
+            <i class="fa fa-facebook"></i>
+          </a>
+          <a href="">
+            <i class="fa fa-instagram"></i>
+          </a>
+          <a href="">
+            <i class="fa fa-twitter"></i>
+          </a>
+          <a href="">
+            <i class="fa fa-youtube"></i>
+          </a>
+        </div>
+      </div>
+      <div class="right-footer-section">
+        <img src="./image/logo.gif" alt="spartak" />
+      </div>
+      <div class="middle-footer-section">
+        <ul>
+          <li><a href="#privacy"> privacy policy </a></li>
+          <li><a href="#privacy">Terms and condition </a></li>
+          <li><a href="#contact">Contact US </a></li>
+        </ul>
+        <br />
+        <br />
+        <span class="copyright">© cyberpunk 2024 All right reserved</span>
+      </div>
+      <div class="left-footer-section">
+        <img
+          class="age-restriction"
+          src="./image/age-restriction.png"
+          alt="age-restriction image" />
+      </div>
+    </footer>
+    
+</body>
+</html>

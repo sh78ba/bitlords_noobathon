@@ -1,0 +1,219 @@
+#community {
+  margin: 10px;
+  font-family: "Sarpanch", sans-serif;
+
+  padding: 10px;
+  align-items: center;
+  animation-name: float ;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+}
+#community::after {
+  content: "";
+  background-image: url(/image/community.jpg);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.5;
+}
+#loginForm {
+  background-color: #000000;
+  border: 1px solid #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 40%;
+  padding: 10px;
+  margin: 0 auto;
+  opacity: 0.8;
+  clip-path: polygon(
+    0% 15%,
+    7% 8%,
+    15% 0%,
+    85% 0%,
+    100% 0,
+    100% 17%,
+    100% 85%,
+    93% 93%,
+    85% 100%,
+    15% 100%,
+    0 100%,
+    0% 85%
+  );
+  animation-name: float ;
+  animation-duration: 1.7ss;
+  animation-iteration-count: 1;
+}
+#loginForm input {
+  width: 250px;
+  margin: 10px;
+  padding: 9px;
+  outline: none;
+  background-color: #000000;
+  color: rgb(170, 170, 15);
+  border: 1px solid rgb(189, 189, 11);
+}
+#loginForm button {
+  font-family: "Sarpanch", sans-serif;
+  background-color: yellow;
+  color: #000;
+  width: 150px;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+  border: none;
+  clip-path: polygon(
+    10% 0%,
+    /* top left */ 90% 0%,
+    /* top right */ 100% 90%,
+    /* bottom right */ 0% 100% /* bottom left */
+  );
+  animation-name: float ;
+  animation-duration: 1.7s;
+  animation-iteration-count: 1;
+}
+
+input::placeholder {
+  padding: 10px;
+  font-family: "Sarpanch", sans-serif;
+  color: rgb(170, 170, 15);
+  margin-left: 30px;
+}
+
+#postForm {
+  width: 70%;
+  height: 50%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #000000;
+  margin: 0 auto;
+  animation-name: float ;
+  animation-duration: 1.7s;
+  animation-iteration-count: 1;
+}
+
+#postForm input {
+  width: 60%;
+  padding: 1%;
+  margin: 10px;
+  outline: none;
+  font-size: 19px;
+  font-family: "Sarpanch", sans-serif;
+  background-color: #605757;
+  color: #fff;
+  animation-name: float ;
+  animation-duration: 1.7s;
+  animation-iteration-count: 1;
+}
+
+.ideas {
+  background-color: yellow;
+  color: #000;
+  display: inline;
+  margin-left: 30%;
+}
+.ideas::after {
+  content: "";
+  width: 60%;
+  position: absolute;
+  top: 140px;
+  left: 10px;
+  height: 2px;
+  background-color: #fff;
+  z-index: -1;
+  animation-name: float ;
+  animation-duration: 1.7s;
+  animation-iteration-count: 1;
+}
+#postForm input::placeholder {
+  color: #fff;
+}
+textarea {
+  outline: none;
+  width: 60%;
+  background-color: #605757;
+  color: #fff;
+  padding: 10px;
+}
+textarea::placeholder {
+  font-family: "Sarpanch", sans-serif;
+  font-size: 20px;
+  resize: none;
+}
+
+#posts {
+  font-family: "Sarpanch", sans-serif;
+  width: 70%;
+  margin: 10px auto;
+  border-radius: 10px;
+  background-color: #5a4dae;
+  padding: 10px;
+  animation-name: float ;
+  animation-duration: 1.7s;
+  animation-iteration-count: 1;
+}
+#postForm {
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  animation-name: float ;
+  animation-duration: 1.7s;
+  animation-iteration-count: 1;
+}
+
+.post-date {
+  font-size: 12px;
+  font-family: sans-serif;
+  animation-name: float ;
+  animation-duration: 1.7s;
+  animation-iteration-count: 1;
+}
+.user-post {
+  background-color: rgb(11, 3, 34);
+  color: #fff;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid rgb(131, 131, 0);
+}
+.screen-shot {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+  animation-name: float ;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+}
+
+.screen-shot img {
+  width: 100%;
+  height: 80%;
+  animation-name: float ;
+  animation-duration: 1.7s;
+  animation-iteration-count: 1;
+  border: 1px solid rgb(131, 131, 0);
+}
+
+@keyframes float {
+
+
+
+  from{
+    transform: scale(3);
+  }to{
+    transform: scale(1);
+  }
+    
+
+  
+}
